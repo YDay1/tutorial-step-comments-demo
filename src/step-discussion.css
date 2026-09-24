@@ -1,0 +1,13 @@
+.step-discussion { margin-top: 12px; background: #f7f8f8; border: 1px solid #f0f1f1; border-radius: 8px; }
+.step-discussion:has(.step-discussion-toggle[aria-expanded="true"]) { background: transparent; border-color: transparent; }
+.step-discussion-toggle { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; min-height: 38px; padding: 9px 10px; text-align: left; color: #858d8b; font-size: 14px; line-height: 20px; }
+.step-discussion-content { padding: 0 10px 10px; }
+.step-discussion-author-note { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #edf0ef; }
+.step-discussion-author-note .step-discussion-author-note-label { font-size: 13px; line-height: 20px; font-weight: 600; color: #526b63; margin-bottom: 4px; }
+.step-discussion-author-note .step-discussion-author-note-text { font-size: 14px; line-height: 22px; color: #333; white-space: pre-wrap; overflow-wrap: anywhere; }
+.step-discussion-content .step-discussion-label { font-size: 12px; line-height: 18px; color: #aaa; margin: 0 0 9px; }
+.step-discussion-list { list-style: none; margin: 0; padding: 0; }
+.step-discussion-list li + li { margin-top: 12px; }
+.step-discussion-list .step-discussion-author { font-size: 12px; line-height: 18px; color: #969c9a; margin-bottom: 3px; }
+.step-discussion-list .step-discussion-text { font-size: 14px; line-height: 22px; color: #444; }
+.step-discussion-all { display: block; width: 100%; text-align: left; margin-top: 12px; border-top: 1px solid #e9eceb; padding-top: 10px; color: #8a9290; font-size: 13px; line-height: 20px; }
