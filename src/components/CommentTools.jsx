@@ -1,0 +1,8 @@
+// Only the expand/keyboard toggle is interactive in this toolbar.
+export default function CommentTools({ compact = false, expanded = false, onToggleAttachments }) {
+  return <span className="comment-tools" aria-hidden={compact ? true : undefined}>
+    <svg viewBox="0 0 24 24"><rect x="8" y="2.2" width="8" height="12.8" rx="4" /><path d="M3.8 10.5v1.3a8.2 8.2 0 0 0 16.4 0v-1.3M12 20v2.5" /></svg>
+    <svg viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="3.4" /><circle cx="8.4" cy="8.3" r="1.5" fill="currentColor" stroke="none" /><path d="m3.1 18 5.2-5.3 4.2 4.1 4.2-6 4.2 5.7" /></svg>
+    {!compact && <><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.2 8v6.2c0 3.3 5.4 3.1 5.4-.9V12a9.7 9.7 0 1 0-4.3 8.1" /><ellipse cx="11.1" cy="12" rx="4.9" ry="5.2" /></svg><span className="comment-tools-smile" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><circle cx="8.3" cy="9.8" r="1.1" fill="currentColor" stroke="none" /><circle cx="15.7" cy="9.8" r="1.1" fill="currentColor" stroke="none" /><path d="M9.4 14.1q2.6 3.2 5.2 0" /></svg><i /></span><button className="comment-tools-expand" type="button" onPointerDown={event => event.preventDefault()} onClick={onToggleAttachments} aria-label={expanded ? '切换到键盘' : '展开更多评论工具'} aria-expanded={expanded} aria-controls={expanded ? 'comment-attachment-options' : undefined}><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" />{expanded ? <><path d="M9 17h6" />{[8, 12, 16].flatMap(x => [7, 10, 13].map(y => <circle key={`${x}-${y}`} cx={x} cy={y} r=".6" fill="currentColor" stroke="none" />))}</> : <path d="M6.7 12h10.6M12 6.7v10.6" />}</svg></button></>}
+  </span>;
+}

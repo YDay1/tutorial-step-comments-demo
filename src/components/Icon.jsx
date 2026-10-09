@@ -1,4 +1,7 @@
 const paths = {
+  actionHeart: <path d="M12 21s-8.9-6.2-9.4-11.4C2.1 4.1 8.1 1.5 12 6c3.9-4.5 9.9-1.9 9.4 3.6C20.9 14.8 12 21 12 21Z" strokeWidth="1.9" />,
+  actionStar: <path d="m12 2 3.25 6.55 7.23 1.06-5.24 5.1 1.24 7.2L12 18.5l-6.48 3.41 1.24-7.2-5.24-5.1 7.23-1.06Z" strokeWidth="1.9" />,
+  actionComment: <><path d="M3.6 16.9A9.7 9.7 0 1 1 8 21l-5.6 1 1.2-5.1Z" strokeWidth="1.8" /><circle cx="8.4" cy="11" r="1.3" fill="currentColor" stroke="none" /><circle cx="15.6" cy="11" r="1.3" fill="currentColor" stroke="none" /></>,
   back: <path d="m15 4-8 8 8 8" />,
   search: <><circle cx="10" cy="10" r="7" /><path d="m15 15 6 6" /></>,
   share: <path d="M14 3v5C6 8 3 14 3 21c4-6 7-7 11-7v5l8-8Z" />,
